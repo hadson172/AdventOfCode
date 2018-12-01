@@ -4,8 +4,7 @@ import java.nio.file.Paths
 
 def alreadySeen = [] as HashSet
 def data = []
-Paths.get("./data.txt").toFile().text.eachLine {data.add(it.toInteger())}
-
+Paths.get("./data.txt").toFile().eachLine {data.add(it.toInteger())}
 
 def done = false
 def result = 0
